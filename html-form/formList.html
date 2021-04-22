@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form width List</title>
+</head>
+<body>
+    <form action="./form-result.php" method="POST" target="_self"><!--Indica el inicio del Formulario-->
+        <ul>
+            <li>
+                <!--Input de texto con label-->
+                <label for="nombre">Nombre: </label><input type="text" name="nombre">
+            </li>
+            <li>
+                <!--Input de texto-->
+                <label for="apellidos">Apellidos: </label><input type="text" name="apellidos">
+            </li>
+            <li>
+            <!--Input númerico con label-->
+            <label for="edad">Edad: </label><input type="number" name="edad">
+            </li>
+            <li>
+                <!--CheckBox-->
+                <label for="checkbox">Selecciona los vehiculos que tengas:</label>
+                <input type="checkbox" id="vehiculo1" name="vehiculo1" value="bici">
+                <label for="vehiculo1"> Tengo una bici</label>
+                <input type="checkbox" id="vehiculo2" name="vehiculo2" value="coche">
+                <label for="vehiculo2"> Tengo un auto</label>
+                <input type="checkbox" id="vehiculo3" name="vehiculo3" value="barco">
+                <label for="vehiculo3"> Tengo un barco</label>
+            </li>
+            <li>
+            <!--Select-->
+            <label for="ejemplo">¿Jugamos?</label>
+            <select name="ejemplo">
+                <option value="piedra">Piedra</option><!--Item Select-->
+                <option value="papel">Papel</option><!--Item Select-->
+                <option value="tijera">Tijera</option><!--Item Select-->
+            </select>
+        </li>
+        <li>
+            <!--RadioButtom-->
+            <label for="sexo">Introduce tu sexo:</label>
+            <input type="radio" id="hombre" name="sexo" value="hombre">
+            <label for="male">Hombre</label>
+            <input type="radio" id="mujer" name="sexo" value="mujer">
+            <label for="female">Mujer</label>
+            <input type="radio" id="otro" name="sexo" value="otro">
+            <label for="other">Otro</label>
+        </li>
+        <li>
+            <input type="submit" value="Submit"><!--Botón de envio del formulario-->
+        </li>
+    </ul>
+    </form><!--Indica el fin del Formulario-->
+</body>
+</html>
