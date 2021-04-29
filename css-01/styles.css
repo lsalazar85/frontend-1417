@@ -1,0 +1,47 @@
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+body ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body h1 {
+    color: gray;
+}
+
+/* id */
+#mainContent {
+    border: 10px solid orange;
+}
+
+/* Estructura */
+header {
+    border: 1px solid blue;
+}
+
+/* Clase */
+
+.list li {
+    color: blue;
+} 
+
+.list2 li {
+    color: hotpink;
+} 
+
+.image {
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
