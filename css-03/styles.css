@@ -1,0 +1,22 @@
+* {
+    margin-bottom: 10px;
+}
+
+.cuadrado {
+    width: 200px;
+    height: 200px;
+    background: yellowgreen;
+}
+
+.rectangulo {
+    width: 400px;
+    height: 200px;
+    background: rebeccapurple;
+}
+
+.punto {
+    width: 20px;
+    height: 20px;
+    background: orangered;
+    border-radius: 50%;
+}
