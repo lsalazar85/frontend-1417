@@ -7,7 +7,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: rgb(237, 237, 237);
+    background: #ededed;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
@@ -48,7 +48,6 @@ header {
 header h1 {
     border-bottom: 1px solid rgb(63, 62, 62);
     padding: 16px;
-    text-align: center;
 }
 
 header ul {
@@ -61,13 +60,8 @@ header ul li {
 
 header .image {
     position: absolute;
+    width: 150px;
+    height: 150px;
     right: 1%;
-    top: 16%;
+    top: 37%;
 }
-
-
-
-
-
-
-
