@@ -2,10 +2,12 @@
     margin-bottom: 10px;
 }
 
+/* Position values = left, rigth, top, botoom  */
+
 .cuadrado {
-    width: 200px;
-    height: 200px;
+    width: 100%;
     background: yellowgreen;
+    position: relative;
 }
 
 .rectangulo {
@@ -14,9 +16,20 @@
     background: rebeccapurple;
 }
 
-.punto {
+.circulo {
     width: 20px;
     height: 20px;
     background: orangered;
     border-radius: 50%;
+    position: absolute;
+    right: 0;
+}
+
+.circulo2 {
+    width: 20px;
+    height: 20px;
+    background: blue;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
 }
