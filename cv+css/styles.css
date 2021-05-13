@@ -21,7 +21,7 @@ li {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color:#775e5e
+    color:#775e5e;
 }
 
 h1 {
@@ -102,7 +102,7 @@ nav ul li:first-child {
 }
 
 /* Ultimo li del ul */
-nav ul li:last-child{
+nav ul li:last-child {
     margin-right: 0px;
 }
 
@@ -163,4 +163,51 @@ footer ul li {
 
 footer ul li a {
     color:#3605be
+}
+
+/* Pseudo Elemento Before */
+
+footer ul li a::before {
+    content: "";
+    display: inline-block;
+    background: url("https://3.bp.blogspot.com/-LHdLdAlA1E0/UyayLmE1XfI/AAAAAAAAETA/Jr90-IZUUvM/s1600/icon.png") no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+/* Pseudo Elemento After */
+
+footer ul li a::after{
+    content: 'Chao';
+    width: 10px;
+    height: 10px;
+    background: rgb(187, 233, 114);
+    padding: 10px;
+}
+
+.parImpar {
+    padding: 16px;
+}
+
+.parImpar ul li {
+    margin-bottom: 10px;
+}
+
+.parImpar ul li:last-child {
+    margin-bottom: 0px;
+}
+
+/* Impares */
+.parImpar ul li:nth-child(odd){
+    background: red;
+}
+
+/* Pares */
+.parImpar ul li:nth-child(even){
+    background: #fabff3;
+}
+
+/* Elemento Unico */
+.parImpar ul li:nth-child(3){
+    color: #ffff02;
 }
