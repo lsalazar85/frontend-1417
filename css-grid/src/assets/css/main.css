@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none; }
+
+section {
+  width: 100vw;
+  height: 500px;
+  background-color: #a0dcf0;
+  display: grid;
+  grid-template-areas: 'header header header' 'section section aside' 'footer footer aside'; }
+  section div {
+    background-color: #eb9292;
+    border: 1px solid black; }
+    section div:nth-of-type(1) {
+      display: grid;
+      grid-area: header; }
+    section div:nth-of-type(2) {
+      grid-area: section; }
+    section div:nth-of-type(3) {
+      grid-area: aside; }
+    section div:nth-of-type(4) {
+      grid-area: footer; }
