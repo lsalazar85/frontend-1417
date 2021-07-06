@@ -34,6 +34,10 @@ var num2 = 20
 // TypeOf
 console.log(typeof num1)
 
+// Operadores Booleanos
+
 // Identidad o igualdad ( === , !== , == )
 console.log(num1 !== num2)
+
+
 
