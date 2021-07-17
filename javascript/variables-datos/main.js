@@ -1,105 +1,120 @@
-// Variables ( var, let, const )
-
-// Forma basica de declarar una variable
-var primerNombre = "Luis"
-
-// Usamos const cuando el valor de la variable no será modificado
-const segundoNombre = "Alfredo"
-
-// Usamos let cuando el valor de la varible puede mutar sin generar interpretaciones no deseadas
-let primerApellido = "Salazar"
-
-// Tipo de datos
-// ( Number - String - Boolean - Undefined)
-
-// Number (Incluye todo los numeros reales y decimales)
-var age = 35;
-
-// String ( Palabra o character )
-var word = "Luis"
-
-// Boolean ( verdadero o falso )
-var verdad = true
-var mentira = false
-
-// Undefined ( No tiene valor de referencia )
-var nucba
-
-
-// Operadores
-
-// Aritmeticos ( sumar, restar, dividir, multiplicar)
-const num1 = 10
-const num2 = 20
-// console.log(num1 + num2)
-
-// TypeOf
-// console.log(typeof num1)
-
-// Operadores Booleanos
-
-// Negacion ( !, !!)
-const esVerdad = 1
-const esMentira = 0
-// console.log(!esVerdad, !esMentira)
-
-// Identidad o igualdad ( === , !== , == )
-// console.log(num1 === num2)
-// console.log(num1 !== num2)
-// console.log(num1 == num2) ( Evitar usar )
-
-// Comparación ( > , <, >=, <=)
-// console.log(5 > 3)
-// console.log(5 < 3)
-// console.log(3 >= 3)
-// console.log(2 <= 1)
-
-// Logicos
-
-// And ( && )
-// console.log(2+2 !== 10 && 5+2 === 7)
-
-// Or ( || )
-// console.log(2+2 === 10 || 5+2 === 7)
-
-// Condicionales
-
-// if
-const condionalIf = () => {
-  if(10 + 10 === 20){
-    console.log('Es cierto')
-  }
+// Old school function
+function hello(name, lastname) {
+  return console.log(`Hola ${name} ${lastname}`)
 }
-//console.log(condionalIf())
 
-// if else
-const condionalIfElse = () => {
-  if(10 + 10 === 100){
-    console.log('Es cierto')
+hello('Luis', 'Salazar')
+
+
+ // ECMA 6+
+
+ // Arrow Function
+ const saludar = (name, lastname) => {
+  return console.log(`Hola ${name} ${lastname}`)
+ }
+
+ //saludar('Agustin', 'Pereyra')
+
+
+// Calculadora
+
+// Calculadora que reciba 2 numeros, y el tipo de operación aritmetica ( + , - , * , / )
+
+const calculator = (num1, num2, operation) => {
+  let result
+
+  if(!num1 || !num2){
+    console.log('Ingresa numeros')
+  }
+
+  if(!isNaN(num1) && !isNaN(num2)){
+    console.log('Ingrese un numero')
+  }
+
+  if(!isNaN(num1) || !isNaN(num2)){
+    console.log('Ingrese un numero')
+  }
+
+/*  if(operation === 'sumar'){
+    console.log(num1 + num2)
+  } else if(operation === 'restar'){
+    console.log(num1 - num2)
+  } else if(operation === 'multiplicar'){
+    console.log(num1 * num2)
+  } else if(operation === 'dividir'){
+    console.log(num1 / num2)
   } else {
-    console.log('Valor Invalido')
+    console.log('Tipo de operacion no valida')
+  }*/
+
+  switch(operation){
+    case 'sumar':
+      result = num1 + num2
+      break;
+
+    case 'restar':
+      result = num1 - num2
+      break;
+
+    case 'multiplicar':
+      result = num1 * num2
+      break;
+
+    case 'dividir':
+      result = num1 / num2
+      break;
+
+    default:
+      console.log('Tipo de operacion no valida')
+  }
+
+  return result;
+}
+
+/*
+calculator(10, 10, 'sumar')
+calculator(10, 10, 'restar')
+calculator(10, 10, 'multiplicar')
+calculator(10, 10, 'dividir')
+calculator(10, 10, 'hola')
+console.log(calculator(10, 10, 'sumar')) */
+
+const saludar = name => {
+  return `Hola ${name}`
+}
+
+const despedida = message => {
+   let result;
+   return result = message
+} 
+
+const presentacion = (name, message) => {
+  let part1 = saludar(name)
+  let part2 = despedida(message)
+
+  return saludar(name) + despedida(message)
+}
+
+//presentacion('Luis', 'Hasta Luego, vuelvan prontos')
+
+// Bucles
+
+// While & For
+
+// While
+
+const whileLoop = () => {
+  let i = 1;
+
+  while(i < 11){
+    console.log(i)
+    i++
   }
 }
-//console.log(condionalIfElse())
 
-// If else if
-const condionalIfElseIf = () => {
-  if(10 + 10 === 100){
-    console.log('Es cierto')
-  } else if (10 + 10 === 1){
-    console.log('Valor Invalido')
-  } else {
-    console.log('No sabes nada')
-  }
+// For
+const forLoop = () => {
+  for(let i = 1; i < 11; i++){
+    console.log(i)
 }
-// console.log(condionalIfElseIf())
 
-// Ternario
-const ternario = 10 + 10 === 20 ? console.log('Esta ok') : console.log('No esta bien')
-
-console.log(ternario)
-
-// concatenación
-// const cinco = '5'
-// console.log(`5 no es esto ${cinco}`)
-// console.log('5 no es esto' + cinco)
