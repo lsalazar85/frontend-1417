@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        span {
+            display: inline-flex;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .calculadoraContainer div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+
+        .calculadoraContainer div button {
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Dom Events</h1>
+    <h2>Calculadora</h2>
+
+    <div class="calculadoraContainer">
+        <ul>
+            <li>
+                <span>Esta calculadora solamente puede hacer operaciones aritmeticas con dos numeros.</span>
+            </li>
+            <li>
+                <span>Solamente podrás sumar, restar, multiplicar y dividir.</span>
+            </li>
+            <li>
+                <span>El resultado lo verás en pantalla.</span>
+            </li>
+        </ul>
+        <div>
+            <div>
+                <span>RESULTADO</span>
+                <span id="resultado"></span>
+            </div>
+            <button onclick={calculadora()}>Comenzar</button>
+        </div>
+    </div>
+
+<script src="./main.js"></script>
+</body>
+</html>
