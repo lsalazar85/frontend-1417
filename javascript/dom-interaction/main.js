@@ -11,20 +11,20 @@ function prueba(){
    document.getElementsByClassName('resultado')[0].innerHTML = num1 + num2
 }
 
-function calculadora(){
-    let numAction = prompt('¿Qué operación aritmetica queres hacer?')
-    let num1 = parseInt(prompt('Ingresa el primer numero'))
-    let num2 = parseInt(prompt('Ingresa el segundo numero'))
-
-    if(numAction === 'sumar' || numAction === '+'){
-       document.getElementById('resultado').innerHTML = num1 + num2
-    } else if(numAction === 'restar' || numAction === '-'){
-        document.getElementById('resultado').innerHTML = num1 - num2
-    } else if(numAction === 'multiplicacion' || numAction === 'multiplicar' || numAction === '*'){
-        document.getElementById('resultado').innerHTML = num1 * num2
-    }else if(numAction === 'división' || numAction === 'dividir' || numAction === '/'){
-        document.getElementById('resultado').innerHTML = num1 / num2
-    } else {
-        alert('Por favor ingresa numeros de forma correcta o una operación valida')
-    }
+function mySelect(){
+   let x = document.getElementById("mySelect").value
+   document.getElementById("resultado").innerHTML = x
 }
+
+function input() {
+    let inputValue = document.getElementById("input")
+    inputValue.value = inputValue.value.toUpperCase()
+    // alert(inputValue.value)
+}
+
+const selectElement = document.querySelector('.helado')
+
+selectElement.addEventListener('change', (event) =>{
+    const resultado = document.querySelector(".resultado")
+    resultado.innerHTML = event.target.value
+})
