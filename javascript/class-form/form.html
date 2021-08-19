@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form html with JS</title>
-</head>
-<body>
-    <h1>Form with JS</h1>
     <style>
+        body {
+            text-align: center;
+        }
+
         form {
             width: 350px;
             height: 350px;
@@ -18,6 +19,7 @@
             flex-direction: column;
             justify-content: space-between;
             padding: 0.5rem;
+            margin: 0 auto;
         }
 
         .input {
@@ -39,11 +41,12 @@
         .input:focus {
             outline: none;
         }
-
     </style>
-
+</head>
+<body>
+    <h1>Form with JS</h1>
     <form onsubmit={myForm(event)}>
-        <input class="input" id="nombre" placeholder="Ecribe tu nombre" type="text">
+        <input class="input" id="nombre" placeholder="Escribe tu nombre" type="text">
         <input class="input" id="apellido" placeholder="Ecribe tu apellido" type="text">
         <input class="input" id="email" placeholder="Escribe tu email" type="email">
         <input class="submit" type="submit" value="Enviar">
