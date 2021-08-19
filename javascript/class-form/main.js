@@ -25,10 +25,10 @@ const myForm = event => {
 
     const dato = document.getElementById('formValues')
 
-    const html = formState.map(item => item.value).forEach(item => {
+    const html = formState.map(item => {
         let p = document.createElement('p')
-        p.innerText = item
-        return dato.appendChild(p)
+        p.innerText = item.value
+        dato.appendChild(p)
     })
 
     formState.length === 3 && JSON.stringify(html)
