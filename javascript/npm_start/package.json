@@ -1,0 +1,20 @@
+{
+  "name": "npm_start",
+  "version": "1.0.0",
+  "description": "Node & npm practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "Node",
+    "practice"
+  ],
+  "author": "Luis Salazar",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "nodemon": "^2.0.12"
+  }
+}
